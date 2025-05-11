@@ -1,0 +1,20 @@
+{
+  "type": "record",
+  "name": "Patient",
+  "namespace": "mistrasteos.learning.avro.domain.hospital",
+  "fields": [
+    {
+      "name": "id",
+      "type": "long"
+    },
+    {
+      "name": "name+",
+      "type": "string"
+    },
+    {
+      "name": "exitus",
+      "type": ["null", {"type": "long", "logicalType": "timestamp-millis"}],
+      "default": null
+    }
+  ]
+}
